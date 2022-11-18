@@ -17,7 +17,7 @@
             $_POST['email']=trim($_POST['email']);
             $_POST['pass']=trim($_POST['pass']);
             $_POST['confirm']=trim($_POST['confirm']);
-            //regex
+            //regex dio santo
         }
     }
     
