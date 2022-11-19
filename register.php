@@ -17,7 +17,13 @@
             $_POST['email']=trim($_POST['email']);
             $_POST['pass']=trim($_POST['pass']);
             $_POST['confirm']=trim($_POST['confirm']);
-            //regex dio santo
+            if((!preg_match("/^[a-zA-Z]*$/",$_POST['name']))){
+                throw new RuntimeException('formato del nome non valido');
+            }
+            if(!preg_match("/^[a-zA-Z]*$/",$_POST['surname'])){
+                throw new RuntimeException('formato del nome non valido');
+            }
+
         }
     }
     
