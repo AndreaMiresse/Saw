@@ -23,7 +23,7 @@
             if(!preg_match("/^[a-zA-Z]*$/",$_POST['surname'])){
                 throw new RuntimeException('formato del nome non valido');
             }
-
+            
         }
     }
     
@@ -34,8 +34,6 @@
         $email=$_POST['email'];
         $pass=$_POST['pass'];
         $confirm=$_POST['confirm'];
-        $regex="[a-zA-Z0-9]";
-        $check=true;
         $con = new mysqli('localhost','root','','prova');
         if($con->connect_errno){
             throw new RuntimeException('non funziona un cazzo dio porco' . $mysqli->connect_error);
